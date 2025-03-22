@@ -1,4 +1,6 @@
-function reverseString() {
-    let str = document.getElementById("inputString").value;
-    document.getElementById("reverseResult").innerText = "Reversed: " + str.split('').reverse().join('');
+function checkPalindrome() {
+    let num = document.getElementById("inputNumber").value;
+    let reversed = num.split('').reverse().join('');
+    let message = (num === reversed) ? "It's a palindrome!" : "Not a palindrome.";
+    document.getElementById("palindromeResult").innerText = message;
 }
